@@ -34,8 +34,7 @@ def printLog(strPrintLine):
 
 
 def readINI(strINIPath):
-    global g_strFailReasonTemp, g_nRecordSec, g_strEC, g_strdBUpperLimit, g_strdbLowerLimit, g_strplayingfile, RefinePackageShowList
-    global g_nMicIndex, g_PackageRequirementList
+    global g_strFailReasonTemp, RefinePackageShowList, g_PackageRequirementList
     if not os.path.exists(strINIPath):
         g_strFailReasonTemp = "INI IS NOT EXIST"
         return False
